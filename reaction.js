@@ -58,7 +58,8 @@ var is_green = true;
         $("#startdiv").click(function(e) {    
               
           if(is_green){
-            alert("Clicked too soon. You tryin to pull something here, eh?");
+            alert("Clicked too soon. Try again.");
+            location.reload();
           }
           else{
             //timestamp mentés: megnyomás pillanata
@@ -72,8 +73,7 @@ var is_green = true;
            $("#startdiv").hide();
            $("#resultdiv").show();
            $("#resultdiv").css("display","block");
-           $('#resultdiv').text("Your reaction time was : " + elapsedTime + " ms | Click here to play again!");
-           alert("github");
+           $('#resultdiv').text("Your reaction time was : " + elapsedTime + " ms! Click here if you want to play again.");
           }
            
     
@@ -82,7 +82,6 @@ var is_green = true;
         $("#resultdiv").click(function () {
           $("#resultdiv").hide();
           reset();          
-          
           });
   });
 
