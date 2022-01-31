@@ -73,6 +73,7 @@ var is_green = true;
            $("#resultdiv").show();
            $("#resultdiv").css("display","block");
            $('#resultdiv').text("Your reaction time was : " + elapsedTime + " ms | Click here to play again!");
+           alert("github");
           }
            
     
